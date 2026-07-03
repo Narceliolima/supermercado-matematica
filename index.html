@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+  <div class="header">SUPERMERCADO PIXEL</div>
+
+  <div class="hud">
+    <span id="phase-display">FASE: 1/10</span>
+    <span id="score-display">PONTOS: 0</span>
+  </div>
+
+  <div class="screen">
+    <div id="item-name">Item: Carregando...</div>
+    <div id="total-price">Total: R$ 0.00</div>
+    <div id="money-paid">Pago: R$ 0.00</div>
+  </div>
+
+  <div class="input-area">
+    <p style="font-size: 10px; margin-bottom: 10px">DIGITE O TROCO CORRETO:</p>
+    <input
+      type="number"
+      id="player-input"
+      step="0.01"
+      placeholder="0.00"
+      autofocus
+    /><br /><br />
+    <button id="btn-submit">CONFIRMAR (ENTER)</button>
+  </div>
+
+  <div id="feedback-msg" class="feedback"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
